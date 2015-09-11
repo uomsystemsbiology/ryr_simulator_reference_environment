@@ -1,21 +1,45 @@
 #!/bin/sh
 
-#This is a sample shell script which executes a set of commands to run
-#some code and generate output.  All the executable commands are 
-#commented out.
-
 # Set up logfile
-log=/vagrant/temp/run_experiments.log
+log=/home/sbl/run_experiments.log
+
+echo;echo;echo
+echo "### Overview
+This shell script is part of the reference environment for the manuscript 
+['Manuscript Name'](http://manuscript-link.org).  
+It executes code to reproduce specific results described in the manuscript.   
+You can find more information about this research at the 
+[Project page](http://project-link.org).  
+
+To find other versions of this reference environment, see Other Links below.  
+To learn more about reference environments, [see the detailed description here](http://reference-environments-link.org).  
+
+### Instructions for use
+
+This shell script reproduces results described in the manuscript and writes 
+output to (location).
+
+### Other links
+
+[Manuscript link](http://manuscript-link.org)
+
+[Project page link](http://project-link.org)
+
+[Docker container](https://docker-link.org)
+
+[Bootable ISO](https://iso-link.org)
+
+[Vagrant-managed virtual machine](https://vagrant-link.org)"
+echo
 
 # Change to project directory
-#cd /home/sbl/gawcurcra15/Examples
+cd ~/ryr-simulator/source
 
-echo This is a sample shell script which might execute program code
-echo to generate some results and write output
-
-echo For instance we might execute a makefile | tee -a $log
-#sleep 2
-#./Make 2>&1 | tee -a $log
+Rscript ryr-simulator.R
 
 echo Completed analysis | tee -a $log
+echo;echo
+
+
+
 $SHELL

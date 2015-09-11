@@ -1,5 +1,7 @@
-The default user is 'sbl' password 'sbl'
-This is the content of data\background_text.txt
-Describe the basic instructions to use the environment here, and the
-location of the output files.  Double-click the script below and
-select 'Execute in Terminal' to run it
+Double-click the script below and select 'Execute in Terminal' to run
+the RyR cluster simulator.  Results are described in:
+   Rajagopal, V., Bass, G., Walker, C. G., Crossman, D. J., Petzer, 
+   A., Hickey, A., ... & Soeller, C. (2015). Examination of the 
+   Effects of Heterogeneous Organization of RyR Clusters, Myofibrils
+   and Mitochondria on Ca 2+ Release Patterns in Cardiomyocytes. 
+   PLOS Comput Biol, 11(9), e1004417.
