@@ -9,9 +9,18 @@ echo Started install_core.sh | tee -a $log
 echo Installing packages | tee -a $log
 
 	sudo apt-get -y update 
-	sudo apt-get -y install r-base r-base-dev evince
+	sudo apt-get -y install r-base r-base-dev evince xorg libx11-dev libglu1-mesa-dev
+
+echo Giving everyone all permissions to /usr/local/lib | tee -a $log
+#This is a copout to get compilation working
+sudo chmod -R 777 /usr/local/lib
+
+echo Installing R packages | tee -a $log
+Rscript /vagrant/temp/data/install_packages.R
 
 echo Completed package installation | tee -a $log
+
+
 
 echo Getting code | tee -a $log
 	
