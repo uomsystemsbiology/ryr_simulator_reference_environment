@@ -23,6 +23,9 @@ sudo sed -i "s#\(desktop_bg *= *\).*#\1\#00447b#" /home/sbl/.config/pcmanfm/lubu
 echo Creating link from shell script on desktop| tee -a $log
 ln -sv /home/sbl/run_experiments.sh /home/sbl/Desktop/run_experiments.sh
 printf "[run_experiments.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+ln -sv /home/sbl/RyR_Simulator_Instructions.pdf /home/sbl/Desktop/RyR_Simulator_Instructions.pdf
+printf "[RyR_Simulator_Instructions.pdf]\nx=160\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+
 
 echo Removing Trash icon from the desktop
 sudo sed -i "s#\(show_trash *= *\).*#\10#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf

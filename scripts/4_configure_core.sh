@@ -15,7 +15,14 @@ echo Copying shell script to home directory | tee -a $log
 sudo cp /vagrant/temp/data/run_experiments.sh /home/sbl/run_experiments.sh
 sudo chmod 777 /home/sbl/run_experiments.sh
 
+echo Copying instructions to home directory | tee -a $log
+sudo cp /vagrant/temp/data/RyR_Simulator_Instructions.pdf /home/sbl/RyR_Simulator_Instructions.pdf
+sudo chmod 777 /home/sbl/RyR_Simulator_Instructions.pdf
+
 echo Linking the shell script into the root folder | tee -a $log
 sudo ln -sv /home/sbl/run_experiments.sh /run_experiments.sh
+
+echo Linking the instructions into the root folder | tee -a $log
+sudo ln -sv /home/sbl/RyR_Simulator_Instructions.pdf /RyR_Simulator_Instructions.pdf
 
 echo Completed configure_core.sh | tee -a $log
